@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shauryaa' Day</title>
+    <style>
+        body{
+            background-color: hotpink;
+            opacity: 0.8;
+            margin: 0;
+            height: 100vh;
+        }
+        .h1{
+            font-style:unset;
+            color:pink;
+            display: grid;
+            place-items: center;
+            /* height: 100vh; */
+            font-size: xx-large; 
+        }
+        marquee{
+            overflow: hidden;
+            animation: infinite;
+            color:honeydew;
+        }
+        marquee{
+            animation: infinite;
+        }
+        .audioplayer{
+            position: absolute;
+            bottom: -30%;
+            nav-down: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            padding: 15px 60px;
+            font-size: 20px;
+            color: hotpink;
+        }
+        #b2{
+            position: absolute;
+        }
+        h3{
+            color:crimson;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('b2');
+    
+    function getRandomPosition(maxWidth, maxHeight) {
+        return {
+            x: Math.floor(Math.random() * maxWidth),
+            y: Math.floor(Math.random() * maxHeight)
+        };
+    }
+
+    setInterval(function() {
+        const { x, y } = getRandomPosition(window.innerWidth, window.innerHeight);
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+    }, 2000); // Moves the button every 2 seconds
+});
+    </script>
+    <font size=5 color=white>
+    <marquee behavior=absloute scroolamount=60 direction="left">Shauryaa' Day---Shauryaa' Day---Shauryaa' Day---Shauryaa' Day---Shauryaa' Day---Shauryaa' Day---Shauryaa' Day</marquee></font>
+    <br>
+    <center><a href="https://ibb.co/QP9sB6J"><img src="https://i.ibb.co/GW7gwVd/sh.jpg" alt="sh" border="0"></a></center>
+    <div class="h1"><h1>Happy Birthday Meri Jaan</h1></div>
+    <audio class="audioplayer" controls autoplay>
+         <source src="Tinashe - Nasty (Lyrics).mp3" type="audio/mp3"> 
+    </audio>
+    <a href="logout.html">
+        <button id="b2">CLAIM ME</button>
+    </a>
+    <h3>AB MERHARBANI KARKE DM CHECK KRO.</h3>
+</body>
+</html>
